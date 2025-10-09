@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="mm10" locus="chr1:164107757-164146520" nextAutoscaleGroup="4" version="8">
+    <Resources>
+        <Resource path="../../../../../../../../Volumes/课题数据/5-FU/ATAC下游输出/bigwig/1.5M/B5-FU-3_L1_Q0058W0149.bw" type="bw"/>
+        <Resource path="../../../../../../../../Volumes/课题数据/5-FU/ATAC下游输出/bigwig/1.5M/PBS-2_L6_Q0057W0150.bw" type="bw"/>
+        <Resource path="../../../../../../../../Volumes/课题数据/5-FU/ATAC下游输出/bigwig/1.5M/B5-FU-1_L1_Q0056W0149.bw" type="bw"/>
+        <Resource path="../../../../../../../../Volumes/课题数据/5-FU/ATAC下游输出/bigwig/1.5M/PBS-3_L1_Q0058W0150.bw" type="bw"/>
+        <Resource path="../../../../../../../../Volumes/课题数据/5-FU/ATAC下游输出/bigwig/1.5M/PBS-1_L2_Q0056W0150.bw" type="bw"/>
+        <Resource path="../../../../../../../../Volumes/课题数据/5-FU/ATAC下游输出/bigwig/1.5M/B5-FU-2_L1_Q0057W0149.bw" type="bw"/>
+    </Resources>
+    <Panel height="570" name="DataPanel" width="1423">
+        <Track attributeKey="B5-FU-1_L1_Q0056W0149.bw" autoScale="false" autoscaleGroup="3" clazz="org.broad.igv.track.DataSourceTrack" color="204,0,51" fontSize="10" id="/Volumes/课题数据/5-FU/ATAC下游输出/bigwig/1.5M/B5-FU-1_L1_Q0056W0149.bw" name="B5-FU-1_L1_Q0056W0149.bw" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="51.968" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="B5-FU-2_L1_Q0057W0149.bw" autoScale="false" autoscaleGroup="3" clazz="org.broad.igv.track.DataSourceTrack" color="204,0,51" fontSize="10" id="/Volumes/课题数据/5-FU/ATAC下游输出/bigwig/1.5M/B5-FU-2_L1_Q0057W0149.bw" name="B5-FU-2_L1_Q0057W0149.bw" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="51.968" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="B5-FU-3_L1_Q0058W0149.bw" autoScale="false" autoscaleGroup="3" clazz="org.broad.igv.track.DataSourceTrack" color="204,0,51" fontSize="10" id="/Volumes/课题数据/5-FU/ATAC下游输出/bigwig/1.5M/B5-FU-3_L1_Q0058W0149.bw" name="B5-FU-3_L1_Q0058W0149.bw" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="51.968" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="PBS-1_L2_Q0056W0150.bw" autoScale="false" autoscaleGroup="3" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="/Volumes/课题数据/5-FU/ATAC下游输出/bigwig/1.5M/PBS-1_L2_Q0056W0150.bw" name="PBS-1_L2_Q0056W0150.bw" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="51.968" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="PBS-2_L6_Q0057W0150.bw" autoScale="false" autoscaleGroup="3" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="/Volumes/课题数据/5-FU/ATAC下游输出/bigwig/1.5M/PBS-2_L6_Q0057W0150.bw" name="PBS-2_L6_Q0057W0150.bw" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="51.968" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="PBS-3_L1_Q0058W0150.bw" autoScale="false" autoscaleGroup="3" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="/Volumes/课题数据/5-FU/ATAC下游输出/bigwig/1.5M/PBS-3_L1_Q0058W0150.bw" name="PBS-3_L1_Q0058W0150.bw" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="51.968" minimum="0.0" type="LINEAR"/>
+        </Track>
+    </Panel>
+    <Panel height="80" name="FeaturePanel" width="1423">
+        <Track attributeKey="Reference sequence" clazz="org.broad.igv.track.SequenceTrack" fontSize="10" id="Reference sequence" name="Reference sequence" sequenceTranslationStrandValue="POSITIVE" shouldShowTranslation="true" visible="true"/>
+        <Track attributeKey="Refseq Genes" clazz="org.broad.igv.track.FeatureTrack" colorScale="ContinuousColorScale;0.0;466.0;255,255,255;0,0,178" fontSize="10" groupByStrand="false" id="https://hgdownload.soe.ucsc.edu/goldenPath/mm10/database/ncbiRefSeq.txt.gz" name="Refseq Genes" visible="true"/>
+    </Panel>
+    <PanelLayout dividerFractions="0.8706240487062404"/>
+    <HiddenAttributes>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+        <Attribute name="NAME"/>
+    </HiddenAttributes>
+</Session>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="mm10" locus="chr7:125438334-125565149" nextAutoscaleGroup="2" version="8">
+    <Resources>
+        <Resource path="../../../CHIATAC/data/2025-06-03-昕宇-组蛋白数据/YM_LT_activeE.bed" type="bed"/>
+        <Resource path="../../../CHIATAC/result/res_20250618/oHSC_2kb_500bp_EP+PE.bedpe" type="bedpe"/>
+        <Resource path="../../../CHIATAC/result/res_20250618/yHSC_2kb_500bp_EP+PE.bedpe" type="bedpe"/>
+        <Resource path="../../../CHIATAC/data/2025-06-03-昕宇-组蛋白数据/OM_LT_activeE.bed" type="bed"/>
+    </Resources>
+    <Panel height="600" name="DataPanel" width="1423">
+        <Track attributeKey="yHSC_2kb_500bp_EP+PE.bedpe" autoscale="true" clazz="org.broad.igv.bedpe.InteractionTrack" color="0,51,204" direction="UP" fontSize="10" graphType="NESTED_ARC" height="220" id="/Users/lin/Desktop/backup/project/CHIATAC/result/res_20250618/yHSC_2kb_500bp_EP+PE.bedpe" name="yHSC_EP_2kb_500bp" showBlocks="true" thickness="1" visible="true"/>
+        <Track attributeKey="YM_LT_activeE.bed" clazz="org.broad.igv.track.FeatureTrack" fontSize="10" groupByStrand="false" id="/Users/lin/Desktop/backup/project/CHIATAC/data/2025-06-03-昕宇-组蛋白数据/YM_LT_activeE.bed" name="yHSC_Enhancer_Active" visible="true"/>
+        <Track attributeKey="oHSC_2kb_500bp_EP+PE.bedpe" autoscale="true" clazz="org.broad.igv.bedpe.InteractionTrack" color="204,0,51" direction="UP" fontSize="10" graphType="NESTED_ARC" height="220" id="/Users/lin/Desktop/backup/project/CHIATAC/result/res_20250618/oHSC_2kb_500bp_EP+PE.bedpe" name="oHSC_EP_2kb_500bp" showBlocks="true" thickness="1" visible="true"/>
+        <Track attributeKey="OM_LT_activeE.bed" clazz="org.broad.igv.track.FeatureTrack" color="204,0,0" fontSize="10" groupByStrand="false" id="/Users/lin/Desktop/backup/project/CHIATAC/data/2025-06-03-昕宇-组蛋白数据/OM_LT_activeE.bed" name="oHSC_Enhancer_Active" visible="true"/>
+    </Panel>
+    <Panel height="1825" name="FeaturePanel" width="1423">
+        <Track attributeKey="Reference sequence" clazz="org.broad.igv.track.SequenceTrack" fontSize="10" id="Reference sequence" name="Reference sequence" sequenceTranslationStrandValue="POSITIVE" shouldShowTranslation="true" visible="true"/>
+        <Track attributeKey="Refseq Genes" clazz="org.broad.igv.track.FeatureTrack" colorScale="ContinuousColorScale;0.0;466.0;255,255,255;0,0,178" displayMode="EXPANDED" fontSize="10" groupByStrand="false" id="https://hgdownload.soe.ucsc.edu/goldenPath/mm10/database/ncbiRefSeq.txt.gz" name="Refseq Genes" visible="true"/>
+    </Panel>
+    <PanelLayout dividerFractions="0.8706240487062404"/>
+    <HiddenAttributes>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+        <Attribute name="NAME"/>
+    </HiddenAttributes>
+</Session>
