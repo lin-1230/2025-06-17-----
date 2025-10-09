@@ -1,0 +1,28 @@
+{
+  "atac.pipeline_type": "atac",
+  "atac.genome_tsv": "/media/ssd/sdb1/data/ljh/software/ref/ENCODE_ATAC_pipline_ref_mm10/mm10.tsv",
+  "atac.fastqs_rep1_R1": [
+    "/media/ssd/sdc1/data/ljh/dnaHurt/rawData/2025-07-28-化疗动员-D21-ATAC_merged/A5-FU-Ana-1_R1.fastq.gz"
+  ],
+  "atac.fastqs_rep1_R2": [
+    "/media/ssd/sdc1/data/ljh/dnaHurt/rawData/2025-07-28-化疗动员-D21-ATAC_merged/A5-FU-Ana-1_R2.fastq.gz"
+  ],
+  "atac.fastqs_rep2_R1": [
+    "/media/ssd/sdc1/data/ljh/dnaHurt/rawData/2025-07-28-化疗动员-D21-ATAC_merged/A5-FU-Ana-2_R1.fastq.gz"
+  ],
+  "atac.fastqs_rep2_R2": [
+    "/media/ssd/sdc1/data/ljh/dnaHurt/rawData/2025-07-28-化疗动员-D21-ATAC_merged/A5-FU-Ana-2_R2.fastq.gz"
+  ],
+  "atac.fastqs_rep3_R1": [
+    "/media/ssd/sdc1/data/ljh/dnaHurt/rawData/2025-07-28-化疗动员-D21-ATAC_merged/A5-FU-Ana-3_R1.fastq.gz"
+  ],
+  "atac.fastqs_rep3_R2": [
+    "/media/ssd/sdc1/data/ljh/dnaHurt/rawData/2025-07-28-化疗动员-D21-ATAC_merged/A5-FU-Ana-3_R2.fastq.gz"
+  ],
+  "atac.paired_end": true,
+  "atac.auto_detect_adapter": true,
+  "atac.enable_xcor": true,
+  "atac.title": "dnaHurt-D21-A5-FU-ANS",
+  "atac.description": "",
+  "atac.singularity": "/media/ssd/sdb1/data/ljh/software/encode_atac_pipline_sif/atac-seq-pipeline_v2.2.3.sif"
+}
