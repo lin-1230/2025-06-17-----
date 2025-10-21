@@ -122,7 +122,6 @@ conda activate singularity
 caper=/home/ljh/miniconda3/envs/caper/bin/caper
 
 ## 定义编码方式（不定义的话，如果任务json的描述或者title中出现中文，就会导致质控结果出问题）
-
 export SINGULARITYENV_LC_ALL=C.UTF-8
 
 
@@ -177,15 +176,15 @@ cd /media/ssd/sdc1/data/ljh/dnaHurt/
 
 ## D21 5FU-ANA
 croo /media/ssd/sdc1/data/ljh/dnaHurt/atac/f5cc4ac5-2216-4b02-8958-7e502f226343/metadata.json \
-    --out-dir /media/ssd/sdc1/data/ljh/dnaHurt/atac_res/f5cc4ac5-2216-4b02-8958-7e502f226343/
+    --out-dir /media/ssd/sdc1/data/ljh/dnaHurt/atac_res/D21_5FU_ANA/
 
-## D21 5-FU
-croo /media/ssd/sdc1/data/ljh/dnaHurt/atac/424e1a58-6eba-4ee2-9e7d-048402ad4d40/metadata.json \
-    --out-dir /media/ssd/sdc1/data/ljh/dnaHurt/atac_res/424e1a58-6eba-4ee2-9e7d-048402ad4d40/
+## D21 5-FU (用下面的代替，重跑了)
+# croo /media/ssd/sdc1/data/ljh/dnaHurt/atac/424e1a58-6eba-4ee2-9e7d-048402ad4d40/metadata.json \
+#     --out-dir /media/ssd/sdc1/data/ljh/dnaHurt/atac_res/D21_5FU/
 
 ## D21 PBS
 croo /media/ssd/sdc1/data/ljh/dnaHurt/atac/f2372544-8bc0-4fa8-85f1-157fc0d0f579/metadata.json \
-    --out-dir /media/ssd/sdc1/data/ljh/dnaHurt/atac_res/f2372544-8bc0-4fa8-85f1-157fc0d0f579/
+    --out-dir /media/ssd/sdc1/data/ljh/dnaHurt/atac_res/D21_PBS/
 
 
 ## 整理qc文件
@@ -197,7 +196,11 @@ qc2tsv /media/ssd/sdc1/data/ljh/dnaHurt/atac_res/f5cc4ac5-2216-4b02-8958-7e502f2
     /media/ssd/sdc1/data/ljh/dnaHurt/atac_res/f2372544-8bc0-4fa8-85f1-157fc0d0f579/qc/qc.json \
     > qc/spreadsheet.tsv
 
-    
+
+
+## 查看 peak数量
+
+
 #######################################
 ###### @date 2025-10-09
 ###### 因为5-FU-2 样本 之前数据不全，现在
@@ -208,9 +211,86 @@ qc2tsv /media/ssd/sdc1/data/ljh/dnaHurt/atac_res/f5cc4ac5-2216-4b02-8958-7e502f2
 merge_lanes "/media/ssd/sdc1/data/ljh/dnaHurt/rawData/2025-07-28-化疗动员-D21-ATAC/" \
             "/media/ssd/sdc1/data/ljh/dnaHurt/rawData/2025-07-28-化疗动员-D21-ATAC_merged/" \
             > log/merge_lanes_2025_10_09.log
+tail -f log/merge_lanes_2025_10_09.log
 
 ## 2. 重新跑5-FU的ATAC上游
 ## 激活环境
 conda activate singularity
 ## 定义caper 路径（因为caper是另一个环境中安装的）
 caper=/home/ljh/miniconda3/envs/caper/bin/caper
+
+
+## 定义编码方式（不定义的话，如果任务json的描述或者title中出现中文，就会导致质控结果出问题）
+export SINGULARITYENV_LC_ALL=C.UTF-8
+## 5-FU组 用singularity 运行
+log_5_FU=log/atac_A5_FU_singularity_10_09.log
+nohup $caper run \
+     /media/ssd/sdc1/data/ljh/ENCODE_ATAC_pipline_code/atac-seq-pipeline-master/atac.wdl \
+     -i code/2025-10-01-Chemo_mobil_atac_A5_FU.json \
+     --singularity --max-concurrent-tasks 3 \
+     > $log_5_FU 2>&1 &
+tail -f $log_5_FU
+less $log_5_FU
+
+
+## 整理输出
+conda activate caper
+cd /media/ssd/sdc1/data/ljh/dnaHurt/
+## 5-FU
+croo /media/ssd/sdc1/data/ljh/dnaHurt/atac/91f78c19-b7fa-4a66-9a84-e0fbeb82fced/metadata.json \
+    --out-dir /media/ssd/sdc1/data/ljh/dnaHurt/atac_res/D21_5FU/
+
+## 整理qc报告
+
+
+
+
+
+#######################################
+###### @date 2025-10-09
+###### 添加1.5M的ATAC上游分析
+###### 因为之前的上游流程并不完全一致
+###### 保证一致的流程
+#######################################
+
+
+## 激活环境
+conda activate singularity
+cd /media/ssd/sdc1/data/ljh/dnaHurt/
+
+## 定义caper 路径（因为caper是另一个环境中安装的）
+caper=/home/ljh/miniconda3/envs/caper/bin/caper
+
+
+## 定义编码方式（不定义的话，如果任务json的描述或者title中出现中文，就会导致质控结果出问题）
+export SINGULARITYENV_LC_ALL=C.UTF-8
+
+## 5-FU组 用singularity 运行
+log_5_FU=log/atac_A5_FU_1.5M_singularity_10_09.log
+nohup $caper run \
+     /media/ssd/sdc1/data/ljh/ENCODE_ATAC_pipline_code/atac-seq-pipeline-master/atac.wdl \
+     -i code/2025-10-09-Chemo_mobil_1.5M_5_FU.json \
+     --singularity --max-concurrent-tasks 3 \
+     > $log_5_FU 2>&1 &
+tail -f $log_5_FU
+less $log_5_FU
+
+## 整理输出
+conda activate caper
+cd /media/ssd/sdc1/data/ljh/dnaHurt/
+## 5-FU
+croo /media/ssd/sdc1/data/ljh/dnaHurt/atac/91f78c19-b7fa-4a66-9a84-e0fbeb82fced/metadata.json \
+    --out-dir /media/ssd/sdc1/data/ljh/dnaHurt/atac_res/D21_5FU_1.5M/
+
+
+## PBS组 用singularity 运行
+log_PBS=log/atac_PBS_1.5M_singularity_10_09.log
+nohup $caper run \
+     /media/ssd/sdc1全（）/data/ljh/ENCODE_ATAC_pipline_code/atac-seq-pipeline-master/atac.wdl \
+     -i code/2025-10-09-Chemo_mobil_1.5M_PBS.json \
+     --singularity --max-concurrent-tasks 3 \
+     > $log_PBS 2>&1 &
+tail -f $log_PBS
+less $log_PBS
+
+

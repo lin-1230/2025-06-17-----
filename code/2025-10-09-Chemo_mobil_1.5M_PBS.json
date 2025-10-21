@@ -1,0 +1,28 @@
+{
+  "atac.pipeline_type": "atac",
+  "atac.genome_tsv": "/media/ssd/sdb1/data/ljh/software/ref/ENCODE_ATAC_pipline_ref_mm10/mm10.tsv",
+  "atac.fastqs_rep1_R1": [
+    "/media/ssd/sdb1/data/ljh/5-FU/data/ATAC/fasta/1.5M/PBS-1_L2_Q0056W0150.R1.fastq.gz"
+  ],
+  "atac.fastqs_rep1_R2": [
+    "/media/ssd/sdb1/data/ljh/5-FU/data/ATAC/fasta/1.5M/PBS-1_L2_Q0056W0150.R2.fastq.gz"
+  ],
+  "atac.fastqs_rep2_R1": [
+    "/media/ssd/sdb1/data/ljh/5-FU/data/ATAC/fasta/1.5M/PBS-2_L6_Q0057W0150.R1.fastq.gz"
+  ],
+  "atac.fastqs_rep2_R2": [
+    "/media/ssd/sdb1/data/ljh/5-FU/data/ATAC/fasta/1.5M/PBS-2_L6_Q0057W0150.R2.fastq.gz"
+  ],
+  "atac.fastqs_rep3_R1": [
+    "/media/ssd/sdb1/data/ljh/5-FU/data/ATAC/fasta/1.5M/PBS-3_L1_Q0058W0150.R1.fastq.gz"
+  ],
+  "atac.fastqs_rep3_R2": [
+    "/media/ssd/sdb1/data/ljh/5-FU/data/ATAC/fasta/1.5M/PBS-3_L1_Q0058W0150.R2.fastq.gz"
+  ],
+  "atac.paired_end": true,
+  "atac.auto_detect_adapter": true,
+  "atac.enable_xcor": true,
+  "atac.title": "dnaHurt-1.5M-PBS",
+  "atac.description": "",
+  "atac.singularity": "/media/ssd/sdb1/data/ljh/software/encode_atac_pipline_sif/atac-seq-pipeline_v2.2.3.sif"
+}
