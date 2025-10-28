@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<Session genome="mm10" locus="chr1:164113262-164152026" nextAutoscaleGroup="2" version="8">
+<Session genome="mm10" locus="chr1:164113261-164152026" nextAutoscaleGroup="2" version="8">
     <Resources>
         <Resource path="../data_bw/D21/PBS-3_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" type="bigwig"/>
         <Resource path="../data_bw/D21/A5-FU-1_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" type="bigwig"/>
@@ -11,14 +11,14 @@
         <Resource path="../data_bw/D21/A5-FU-Ana-1_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" type="bigwig"/>
         <Resource path="../data_bw/D21/A5-FU-2_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" type="bigwig"/>
     </Resources>
-    <Panel height="722" name="DataPanel" width="1903">
-        <Track attributeKey="A5-FU-1_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" autoScale="false" autoscaleGroup="1" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="/Users/lin/Desktop/backup/project/shaoTong/2025-06-17-化疗动员/data_bw/D21/A5-FU-1_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" name="A5-FU-1_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" renderer="BAR_CHART" visible="true" windowFunction="mean">
+    <Panel height="773" name="DataPanel" width="1903">
+        <Track attributeKey="A5-FU-1_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" autoScale="false" autoscaleGroup="1" clazz="org.broad.igv.track.DataSourceTrack" color="204,0,51" fontSize="10" id="/Users/lin/Desktop/backup/project/shaoTong/2025-06-17-化疗动员/data_bw/D21/A5-FU-1_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" name="A5-FU-1_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" renderer="BAR_CHART" visible="true" windowFunction="mean">
             <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="19.04735" minimum="0.0" type="LINEAR"/>
         </Track>
-        <Track attributeKey="A5-FU-2_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" autoScale="false" autoscaleGroup="1" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="/Users/lin/Desktop/backup/project/shaoTong/2025-06-17-化疗动员/data_bw/D21/A5-FU-2_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" name="A5-FU-2_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" renderer="BAR_CHART" visible="true" windowFunction="mean">
+        <Track attributeKey="A5-FU-2_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" autoScale="false" autoscaleGroup="1" clazz="org.broad.igv.track.DataSourceTrack" color="204,0,51" fontSize="10" id="/Users/lin/Desktop/backup/project/shaoTong/2025-06-17-化疗动员/data_bw/D21/A5-FU-2_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" name="A5-FU-2_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" renderer="BAR_CHART" visible="true" windowFunction="mean">
             <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="19.04735" minimum="0.0" type="LINEAR"/>
         </Track>
-        <Track attributeKey="A5-FU-3_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" autoScale="false" autoscaleGroup="1" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="/Users/lin/Desktop/backup/project/shaoTong/2025-06-17-化疗动员/data_bw/D21/A5-FU-3_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" name="A5-FU-3_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" renderer="BAR_CHART" visible="true" windowFunction="mean">
+        <Track attributeKey="A5-FU-3_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" autoScale="false" autoscaleGroup="1" clazz="org.broad.igv.track.DataSourceTrack" color="204,0,51" fontSize="10" id="/Users/lin/Desktop/backup/project/shaoTong/2025-06-17-化疗动员/data_bw/D21/A5-FU-3_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" name="A5-FU-3_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" renderer="BAR_CHART" visible="true" windowFunction="mean">
             <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="19.04735" minimum="0.0" type="LINEAR"/>
         </Track>
         <Track attributeKey="PBS-1_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" autoScale="false" autoscaleGroup="1" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="/Users/lin/Desktop/backup/project/shaoTong/2025-06-17-化疗动员/data_bw/D21/PBS-1_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" name="PBS-1_R1.trim.srt.nodup.no_chrM_MT.tn5.fc.signal.bigwig" renderer="BAR_CHART" visible="true" windowFunction="mean">
@@ -40,11 +40,11 @@
             <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="19.04735" minimum="0.0" type="LINEAR"/>
         </Track>
     </Panel>
-    <Panel height="102" name="FeaturePanel" width="1903">
+    <Panel height="110" name="FeaturePanel" width="1903">
         <Track attributeKey="Reference sequence" clazz="org.broad.igv.track.SequenceTrack" fontSize="10" id="Reference sequence" name="Reference sequence" sequenceTranslationStrandValue="POSITIVE" shouldShowTranslation="true" visible="true"/>
         <Track attributeKey="Refseq Genes" clazz="org.broad.igv.track.FeatureTrack" colorScale="ContinuousColorScale;0.0;466.0;255,255,255;0,0,178" fontSize="10" groupByStrand="false" id="https://hgdownload.soe.ucsc.edu/goldenPath/mm10/database/ncbiRefSeq.txt.gz" name="Refseq Genes" visible="true"/>
     </Panel>
-    <PanelLayout dividerFractions="0.8712394705174489"/>
+    <PanelLayout dividerFractions="0.8707865168539326"/>
     <HiddenAttributes>
         <Attribute name="DATA FILE"/>
         <Attribute name="DATA TYPE"/>
