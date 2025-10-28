@@ -279,18 +279,26 @@ less $log_5_FU
 conda activate caper
 cd /media/ssd/sdc1/data/ljh/dnaHurt/
 ## 5-FU
-croo /media/ssd/sdc1/data/ljh/dnaHurt/atac/91f78c19-b7fa-4a66-9a84-e0fbeb82fced/metadata.json \
-    --out-dir /media/ssd/sdc1/data/ljh/dnaHurt/atac_res/D21_5FU_1.5M/
+croo /media/ssd/sdc1/data/ljh/dnaHurt/atac/2a0d79a3-644c-4f30-ba0f-a10f56ce142e/metadata.json \
+    --out-dir /media/ssd/sdc1/data/ljh/dnaHurt/atac_res/1.5M-5FU/
 
 
 ## PBS组 用singularity 运行
-log_PBS=log/atac_PBS_1.5M_singularity_10_09.log
+log_PBS=log/atac_PBS_1.5M_singularity_10_22.log
 nohup $caper run \
-     /media/ssd/sdc1全（）/data/ljh/ENCODE_ATAC_pipline_code/atac-seq-pipeline-master/atac.wdl \
+     /media/ssd/sdc1/data/ljh/ENCODE_ATAC_pipline_code/atac-seq-pipeline-master/atac.wdl \
      -i code/2025-10-09-Chemo_mobil_1.5M_PBS.json \
      --singularity --max-concurrent-tasks 3 \
      > $log_PBS 2>&1 &
 tail -f $log_PBS
 less $log_PBS
+
+## 整理输出
+conda activate caper
+cd /media/ssd/sdc1/data/ljh/dnaHurt/
+## PBS
+croo /media/ssd/sdc1/data/ljh/dnaHurt/atac/0a30374c-b1c6-4aee-8a35-49bae8f807cf/metadata.json \
+    --out-dir /media/ssd/sdc1/data/ljh/dnaHurt/atac_res/1.5M-PBS/
+
 
 
