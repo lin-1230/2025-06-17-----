@@ -258,6 +258,31 @@ narrow_5FU_PBS_edgeR_1p5M_p01 <- filter_significant_peaks(
   prefix = "narrow_5FU_PBS_edgeR_1p5M_"
 )
 
+
+## 5FUANA 5FU edgeR 0.05
+narrow_5FUANA_5FU_edgeR_1p5M_p05 <- filter_significant_peaks(
+  ann_depeak_file = paste0(resDir, 'narrow_5FUANA_5FU_edgeR_Ann_DEpeak.csv'),
+  p_cutoff = 0.05,
+  fold_cutoff = 0,
+  resDir = resDir,
+  prefix = "narrow_5FUANA_5FU_edgeR_"
+)
+
+## 5FUANA 5FU edgeR 0.01
+narrow_5FUANA_5FU_edgeR_p01 <- filter_significant_peaks(
+  ann_depeak_file = paste0(resDir, 'narrow_5FUANA_5FU_edgeR_Ann_DEpeak.csv'),
+  p_cutoff = 0.01,
+  fold_cutoff = 0,
+  resDir = resDir,
+  prefix = "narrow_5FUANA_5FU_edgeR_"
+)
+
+
+
+head(narrow_5FUANA_5FU_edgeR_1p5M_p05$gain)
+head(narrow_5FUANA_5FU_edgeR_1p5M_p05$loss)
+
+
 head(narrow_5FU_PBS_edgeR_1p5M_p01$gain)
 head(narrow_5FU_PBS_edgeR_1p5M_p01$loss)
 
@@ -367,3 +392,45 @@ head(idr_5FU_PBS_edgeR_res_p05$gain)
 
 
 nrow(narrow_5FU_PBS_edgeR_p01$gain)
+
+
+
+
+## narrow 结果，改变一下阈值
+
+## 1.5M edgeR 5FU PBS 0.05 1
+narrow_5FU_PBS_edgeR_1p5M_p05_fc1 <- filter_significant_peaks(
+  ann_depeak_file = paste0(resDir, 'narrow_5FU_PBS_edgeR_1p5M_Ann_DEpeak.csv'),
+  p_cutoff = 0.05,
+  fold_cutoff = 1,
+  resDir = resDir,
+  prefix = "narrow_5FU_PBS_edgeR_1p5M_"
+)
+nrow(narrow_5FU_PBS_edgeR_1p5M_p05_fc1$gain)
+nrow(narrow_5FU_PBS_edgeR_1p5M_p05_fc1$loss)
+
+## D21 edgeR 5FU PBS 0.05 4
+narrow_5FU_PBS_edgeR_p05_fc4 <- filter_significant_peaks(
+  ann_depeak_file = paste0(resDir, 'narrow_5FU_PBS_edgeR_Ann_DEpeak.csv'),
+  p_cutoff = 0.05,
+  fold_cutoff = 4,
+  resDir = resDir,
+  prefix = "narrow_5FU_PBS_edgeR_"
+)
+nrow(narrow_5FU_PBS_edgeR_p05_fc4$gain)
+nrow(narrow_5FU_PBS_edgeR_p05_fc4$loss)
+
+
+
+## D21 edgeR 5FUANA 5FU 0.05 4
+narrow_5FUANA_5FU_edgeR_p05_fc4 <- filter_significant_peaks(
+  ann_depeak_file = paste0(resDir, 'narrow_5FUANA_5FU_edgeR_Ann_DEpeak.csv'),
+  p_cutoff = 0.05,
+  fold_cutoff = 4,
+  resDir = resDir,
+  prefix = "narrow_5FUANA_5FU_edgeR_" 
+)
+nrow(narrow_5FUANA_5FU_edgeR_p05_fc4$gain)
+nrow(narrow_5FUANA_5FU_edgeR_p05_fc4$loss)
+
+

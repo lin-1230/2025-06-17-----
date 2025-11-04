@@ -83,3 +83,17 @@ cut -f1-3 ${idr_5FUANA_5FU_DEpeak_edgeR} | annotatePeaks.pl - mm10 > \
   ${idr_5FUANA_5FU_Ann_edgeR}
 
 
+########################
+## 1.5M narrow的结果
+########################
+
+## 输入文件
+# edgeR
+narrow_5FU_PBS_DEpeak_edgeR_1p5M='/media/ssd/sdc1/data/ljh/dnaHurt/DiffBind/2025_10_22_res/1.5M_DiffBind_res_narrowPeak_DEpeak1_edgeR.bed'
+## 输出文件
+narrow_5FU_PBS_Ann_edgeR_1p5M='/media/ssd/sdc1/data/ljh/dnaHurt/DiffBind/2025_10_22_res/1.5M_DiffBind_res_narrowPeak_DEpeak1_Ann_edgeR.txt'
+
+## 注释
+cut -f1-3 ${narrow_5FU_PBS_DEpeak_edgeR_1p5M} | annotatePeaks.pl - mm10 > \
+  ${narrow_5FU_PBS_Ann_edgeR_1p5M}
+head -10 ${narrow_5FU_PBS_Ann_edgeR_1p5M}

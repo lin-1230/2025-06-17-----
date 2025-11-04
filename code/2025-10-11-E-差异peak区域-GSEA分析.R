@@ -13,7 +13,7 @@
 
 dir.create('/media/ssd/sdc1/data/ljh/dnaHurt/GSEA/',recursive = T)
 setwd('/media/ssd/sdc1/data/ljh/dnaHurt/')
-source('code/config_seurat.R')
+# source('code/config_seurat.R')
 
 ## 自定义读取并筛选差异基因的方程
 # 定义读取差异基因的函数
