@@ -420,6 +420,16 @@ plot_nes_fdr_bubble(gsea_cell_migration_max_5FUANA_5FU_promoter,
                     title = "")
 
 
+## 绘制1.5M 5FU_PBS_promoter的细胞迁移相关的气泡图
+plot_nes_fdr_bubble(gsea_1p5M_5FU_PBS_max,
+                    out_path = paste0(resDir, "NES_vs_FDR_bubble_cell_migration_5FU_PBS_promoter_1p5M.pdf"),
+                    title = "")
+## 绘制1.5M 5FU_PBS_max的细胞迁移相关的气泡图
+plot_nes_fdr_bubble(gsea_1p5M_max_5FU_PBS_promoter,
+                    out_path = paste0(resDir, "NES_vs_FDR_bubble_cell_migration_5FU_PBS_max.pdf"),
+                    title = "")
+
+
 
 ## 绘制所有基因集的FDR-NES散点图
 p_fdr <- ggplot(gsea_all_max,
